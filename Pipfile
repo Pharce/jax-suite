@@ -8,6 +8,9 @@ jax = "*"
 jaxlib = "*"
 tensorflow-datasets = "*"
 tensorflow = "*"
+dm-env = "*"
+dm-tree = "*"
+optax = "*"
 
 [dev-packages]
 
