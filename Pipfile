@@ -11,6 +11,8 @@ tensorflow = "*"
 dm-env = "*"
 dm-tree = "*"
 optax = "*"
+rlax = "*"
+chex = "*"
 
 [dev-packages]
 
