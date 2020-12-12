@@ -13,6 +13,7 @@ dm-tree = "*"
 optax = "*"
 rlax = "*"
 chex = "*"
+jraph = {git = "git://github.com/deepmind/jraph.git"}
 
 [dev-packages]
 
