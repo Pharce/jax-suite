@@ -111,8 +111,8 @@ def loss(params, images, targets):
     Returns:
         loss (jnp.float32): loss of predictions. 
     """
-  preds = batched_predict(params, images)
-  return -jnp.mean(preds * targets)
+    preds = batched_predict(params, images)
+    return -jnp.mean(preds * targets)
 
 @jit
 def update(params, x, y):
@@ -126,8 +126,8 @@ def update(params, x, y):
     Returns:
         params_updated [list]: Updated list of parameters. 
     """
-  grads = grad(loss)(params, x, y)
-  return [(w - step_size * dw, b - step_size * db)
+    grads = grad(loss)(params, x, y)
+    return [(w - step_size * dw, b - step_size * db)
           for (w, b), (dw, db) in zip(params, grads)]
 if __name__ == '__main__':
     layer_sizes = [784, 512, 512, 10]
